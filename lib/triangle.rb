@@ -17,8 +17,8 @@ class Triangle
   end
   
   def check_triangle
-    is_triangle = [(s1 + s2 > s3), (s1 + c > b), (b + c > a)]
-    [a, b, c].each do |side|
+    is_triangle = [(s1 + s2 > s3), (s1 + s3 > s2), (s2 + s3 > s1)]
+    [s1, s2, s3].each do |side|
       is_triangle << false if side <= 0
     raise TriangleError if is_triangle.include?(false)
     end
