@@ -20,7 +20,7 @@ class Triangle
     [a, b, c].each do |side|
       is_triangle << false if side <= 0
     raise TriangleError if is_triangle.include?(false)
-  end
+    end
   end
   
   class TriangleError < StandardError
