@@ -5,5 +5,6 @@ class Triangle
     @s1, @s2, @s3 = s1, s2, s3
   end
   
-  def kind
+  def kind 
+    
 end
