@@ -6,5 +6,6 @@ class Triangle
   end
   
   def kind 
-    if s1 + s2 
+    if s1 == s2 && s2 == s3
+      :
 end
